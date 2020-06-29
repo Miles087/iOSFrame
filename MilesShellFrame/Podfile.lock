@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.5.5)
+  - MJExtension (3.2.1)
+  - WMZDialog (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - IQKeyboardManager
+  - MJExtension
+  - WMZDialog
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - IQKeyboardManager
+    - MJExtension
+    - WMZDialog
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  WMZDialog: 325b15889eb920277d5a85ecbe423cdc4976d5e8
+
+PODFILE CHECKSUM: 083837f9d06677ae934e9f38851087e9539d4f8f
+
+COCOAPODS: 1.8.4

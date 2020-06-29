@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  MilesShellFrame
+//
+//  Created by Miles Wang on 2020/6/29.
+//  Copyright © 2020 Chen Wang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIColor+NewFuc.h"      // UIcolor的扩展类
+#import "Constants.h"           // 常量们
+#import "IQKeyboardManager.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+
+// 显示新ViewController
+#define PUSH(pushVC) [self.navigationController pushViewController:pushVC animated:YES]
+// 设置字号
+#define FONT(size) [UIFont systemFontOfSize:size]
+
+// 尺寸
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+// 字号
+#define KFONT_14    FONT(KX(14))
+
+//颜色
+#define COLOR_BLACK   [UIColor colorWithHexString:@"#333333"]//常规文本黑色
+#define COLOR_BG      [UIColor colorWithHexString:@"#FAFDFB"]//背景色
+
+#endif /* PrefixHeader_pch */
