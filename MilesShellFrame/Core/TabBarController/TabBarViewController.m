@@ -62,7 +62,7 @@
 #pragma mark 修改名称
     NSArray *titleArrs = @[@"页面一",@"页面二",@"页面三"];
 #pragma mark 修改图片名字
-    NSArray * normImage = @[@"ningmneg",@"huluobo",@"congsuan"];
+    NSArray * normImage = @[@"ningmeng",@"huluobo",@"congsuan"];
 #pragma mark 修改选中图片的名字
     NSArray * selectImage = @[@"caidao",@"guochan",@"daoju"];
     UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, self.tabBar.frame.size.height)];
@@ -86,7 +86,7 @@
         
         
         UIButton *titleBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        titleBtn.frame = CGRectMake(btn_X+btn_width*i, 26, btn_width, 20);
+        titleBtn.frame = CGRectMake(btn_X+btn_width*i, 30, btn_width, 20);
         titleBtn.titleLabel.font = [UIFont systemFontOfSize:13];
         [titleBtn setTitleColor:[UIColor lightGrayColor] forState:(UIControlStateNormal)];
         [titleBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateSelected)];
@@ -109,7 +109,7 @@
         
     }
     
-    //设置横线的宽度
+    //椭圆的样式
     _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 54-26, SCREEN_W/self.viewControllers.count/1.5,26)];
     _lineView.backgroundColor = [UIColor clearColor];
     _lineView.layer.cornerRadius = 13.0f;
@@ -117,6 +117,11 @@
     _lineView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     [_lineView.layer setMasksToBounds:YES];
     _lineView.center = CGPointMake(_button.center.x, _button.center.y);
+    // 彩色阴影
+    _lineView.layer.shadowColor = [[UIColor lightGrayColor] CGColor];
+    _lineView.layer.shadowOffset = CGSizeZero;
+    _lineView.layer.shadowOpacity = 0.25;
+    _lineView.layer.shadowRadius = 3;
     [bgView addSubview:_lineView];
     
     [self.tabBar addSubview:bgView];
